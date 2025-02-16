@@ -74,6 +74,7 @@ body {
     position:absolute;
     top:100px;
     right:18%;
+    z-index: 1000;
 }
 
 .image img {
