@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokedex</title>
+    <script src="pokedex.js" defer></script>
+    <link rel="stylesheet" href="pokedex.css">
+</head>
+<body>
+    <div class="container">
+        <div class="upperSide">
+            <header>
+                <h1>Pokedex</h1>
+            </header>
+            <div class="searchSection">
+                <img src="assets/search.svg" alt="search">
+                <input type="text" class="searchBar" placeholder="Search Pokemon">
+                <img src="assets/cross.svg" alt="cross" class="cross">
+            </div>
+        </div>
+        <div class="pokeList">
+            <div class="listItem">
+                <div class="idNumber">#0001</div>
+                <div class="pokeSection">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/35.svg" alt="" class="pokemon">
+                </div>
+                <div class="name">Bulbasaur</div>
+            </div>
+            <div class="notFound" style="display:none">
+                <h2>Pokemon Not Found</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

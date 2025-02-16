@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="details.js" defer></script>
+    <link rel="stylesheet" href="details.css">      
+</head>
+<body>
+    <div class="container" style="border:thick solid black">
+        <header>
+            <div class="header">
+                <a href="./pokedex.html"><img src="assets/back-to-home.svg" alt="back" class="backToHome"></a>
+                <h1 class="name">Bulbasaur</h1>
+                <p class="id">#0001</p>
+            </div>
+        </header>
+        <div class="ModifiedImage">
+            <a href="#" class="left"><img src="assets/chevron_left.svg" alt="left" class="leftImage"></a>
+            <div class="image">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="image">
+            </div>
+            <a href="#" class="right"><img src="assets/chevron_right.svg" alt="right" class="rightImage"></a>
+        </div>
+        <div class="details">
+            <div class="type">
+                <p class="grass"><img src="types/grass.svg" alt="grass">grass</p>
+                <p class="poison"><img src="types/poison.svg" alt="poison">poison</p>
+            </div>
+            <p class="about">About</p>
+            <div class="info">
+                <div class="pokeDetailBox">
+                    <div class="pokeDetail">
+                        <img src="assets/weight.svg" alt="weight">
+                        <p class="weight"></p>
+                    </div>
+                    <p class="caption">Weight</p>
+                </div>
+                <div class="pokeDetailBox">
+                    <div class="pokeDetail">
+                        <img src="assets/height.svg" alt="Height">
+                        <p class="height"></p>
+                    </div>
+                    <p class="caption">Height</p>
+                </div>
+                <div class="pokeDetailBox" style="border:none">
+                    <div class="pokeDetail move">
+                        
+                    </div>
+                    <p class="caption">Move</p>
+                </div>
+            </div>
+            <p class="pokeDiscription"></p>
+            <p class="statHead">Base Stats</p>
+            <div class="stats">
+                <div class="statsBox" data-stat="hp">
+                    <p class="stat">HP</p>
+                    <p class="statValue"></p>
+                    <progress value="" max="100" class="progressBar"></progress>
+                </div>
+                <div class="statsBox" data-stat="atk">
+                    <p class="stat">ATK</p>
+                    <p class="statValue"></p>
+                    <progress value="" max="100" class="progressBar"></progress>
+                </div>
+                <div class="statsBox" data-stat="def">
+                    <p class="stat">DEF</p>
+                    <p class="statValue"></p>
+                    <progress value="" max="100" class="progressBar"></progress>
+                </div>
+                <div class="statsBox" data-stat="satk">
+                    <p class="stat">Sp. ATK</p>
+                    <p class="statValue"></p>
+                    <progress value="" max="100" class="progressBar"></progress>
+                </div>
+            </div>
+        </div>
+        <img src="assets/pokedex.svg" alt="pokedex" class="details-bg">
+    </div>
+</body>
+</html>
