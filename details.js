@@ -126,7 +126,12 @@ const displayPokemonDetails = (pokemon) => {
     types.forEach(({ type }) => {
         const typeEl = document.createElement("p");
         typeEl.className = type.name;
-        typeEl.textContent = type.name;
+        const img=document.createElement("img");
+        img.className=type.name+"img";
+        img.src=`types/${type.name}.svg`;
+        img.alt=type.name;
+        typeEl.appendChild(img);
+        typeEl.append(type.name);
         typeEl.style.backgroundColor=`${typeColors[type.name]}`; 
         typeWrapper.appendChild(typeEl);
     });
